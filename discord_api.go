@@ -32,6 +32,7 @@ func NewApiClient(authToken string, myUID string) *apiClient {
 	return &apiClient{
 		authToken: authToken,
 		client:    &http.Client{},
+  myUID:     myUID
 	}
 }
 
